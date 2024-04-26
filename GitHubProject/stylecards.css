@@ -1,6 +1,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
+
+body{
+    background-color: #ff4800;
+}
+
+
 .container {
   display: grid;
   grid-template-columns: 300px 300px 300px;
