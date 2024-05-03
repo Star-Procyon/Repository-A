@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/stylecards.css">
     <link rel="stylesheet" href="/bootstrap-4.0.0-dist/bootstrap.min.css">
     <link rel="icon" type="image/png" href="/Pictures/jambaicon.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -30,5 +34,52 @@
             </li>
         </ul>
     </nav>
+    <div>
+        <style>
+            .correct {
+                color: green;
+            }
+            .incorrect {
+                color: red;
+            }
+        </style>
+        </head>
+        <body>
+        <h1>Quiz</h1>
+        <form id="quiz-form">
+            <div>
+                <p>Question 1: What is the capital of Hungary?</p>
+                <input type="text" id="answer1">
+            </div>
+            <div>
+                <p>Question 2: What is the square root of 81?</p>
+                <input type="text" id="answer2">
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="results"></div>
+        <script>
+            function checkAnswers() {
+                var answer1 = document.getElementById('answer1').value;
+                var answer2 = document.getElementById('answer2').value;
+                var resultsHtml = '';
+                var score = 0;
+                if (answer1.toLowerCase() === 'budapest') {
+                    resultsHtml += '<p class="correct">Question 1 is correct!</p>';
+                    score++;
+                } else {
+                    resultsHtml += '<p class="incorrect">Question 1 is incorrect. The correct answer is Budapest.</p>';
+                }
+                if (answer2 === '9') {
+                    resultsHtml += '<p class="correct">Question 2 is correct!</p>';
+                    score++;
+                } else {
+                    resultsHtml += '<p class="incorrect">Question 2 is incorrect. The correct answer is 9.</p>';
+                }
+                resultsHtml += '<p>Your score is ' + score + ' out of 2.</p>';
+                document.getElementById('results').innerHTML = resultsHtml;
+            }
+        </script>
+    </div>
 </body>
 </html>
