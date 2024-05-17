@@ -7,6 +7,10 @@
     width: 1%;
 }
 
+#quizpage {
+    text-align: center;
+}
+
 .correct {
     color: green;
 }

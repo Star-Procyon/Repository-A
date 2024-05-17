@@ -42,46 +42,66 @@
         <form id="quiz-form">
             <div>
                 <p>Első kérdés: Mi Jámbor Gergő beceneve?</p>
-                <input type="text" id="answer1">
+                <input type="checkbox" name="answer1" value="Gerely"> Gerely
+                <input type="checkbox" name="answer1" value="Jamba"> Jamba
+                <input type="checkbox" name="answer1" value="Jámbor"> Jámbor
             </div>
             <div>
                 <p>Második kérdés: Gergő mikor született?</p>
-                <input type="text" id="answer2">
+                <input type="checkbox" name="answer2" value="2007.10.25."> 2007.10.25.
+                <input type="checkbox" name="answer2" value="2009.09.09"> 2009.09.09.
+                <input type="checkbox" name="answer2" value="2008.09.09."> 2008.09.09.
             </div>
             <div>
                 <p>Harmadik kérdés: Melyik iskolába jár Gergő?</p>
-                <input type="text" id="answer3">
+                <input type="checkbox" name="answer3" value="Győri SZC Jedlik Ányos Gépipari és Informatikai Technikum és Kollégium"> Győri Jedlik Ányos Technikum
+                <input type="checkbox" name="answer3" value="Bercsényi"> Győri Bercsényi Miklós Technikum
+                <input type="checkbox" name="answer3" value="Krúdy"> Győri Krúdy Gyula Technikum
             </div>
             <div>
                 <p>Negyedik kérdés: Hány kiló Gergő fekvenyomás rekordja?</p>
-                <input type="text" id="answer4">
+                <input type="checkbox" name="answer4" value="100 kg"> 100 kg
+                <input type="checkbox" name="answer4" value="50 kg"> 50 kg
+                <input type="checkbox" name="answer4" value="175 kg"> 175 kg
             </div>
             <div>
                 <p>Ötödik kérdés: Mi Gergő kedvenc videójátéka?</p>
-                <input type="text" id="answer5">
+                <input type="checkbox" name="answer5" value="SV"> Stardew Valley
+                <input type="checkbox" name="answer5" value="CS2"> CS2
+                <input type="checkbox" name="answer5" value="Fortnite"> Fortnite
             </div>
             <div>
                 <p>Hatodik kérdés: Milyen járművel szelte át a sivatagot Gergő?</p>
-                <input type="text" id="answer6">
+                <input type="checkbox" name="answer6" value="Teve"> Teve
+                <input type="checkbox" name="answer6" value="Quad"> Quad
+                <input type="checkbox" name="answer6" value="Repülő"> SU-35 Vadászgép
             </div>
             <div>
                 <p>Hetedik kérdés: Hány éve jár Gergő edzőterembe?</p>
-                <input type="text" id="answer7">
+                <input type="checkbox" name="answer7" value="2"> 2
+                <input type="checkbox" name="answer7" value="5"> 5
+                <input type="checkbox" name="answer7" value="10"> 10
             </div>
             <div>
                 <p>Nyolcadik kérdés: Hány órát töltött Gergő a kedvenc videójátékának játszásával?</p>
-                <input type="text" id="answer8">
+                <input type="checkbox" name="answer8" value="47777"> 437 órát
+                <input type="checkbox" name="answer8" value="47778"> 1000 órát
+                <input type="checkbox" name="answer8" value="5000"> 5000 órát
             </div>
             <div>
                 <p>Kilencedik kérdés: Melyik edzőterembe szokott Gergő járni?</p>
-                <input type="text" id="answer9">
+                <input type="checkbox" name="answer9" value="FG"> Fox Gym
+                <input type="checkbox" name="answer9" value="Cutler"> Cutler
+                <input type="checkbox" name="answer9" value="BLANK"> ----INSERT---PLACEHOLDER----
             </div>
             <div>
                 <p>Tizedik kérdés: Ki írta a bemutatást Gergőről?</p>
-                <input type="text" id="answer10">
+                <input type="checkbox" name="answer10" value="Szanyi Tamás"> Szanyi Tamás
+                <input type="checkbox" name="answer10" value="spigger"> Pusztai Samu
+                <input type="checkbox" name="answer10" value="nyik"> Szabó Dominik
             </div>
 
-            <button type="button" onclick="checkAnswers()">Sumbit</button>
+            <button type="button" onclick="checkAnswers()">Megoldás Beadása</button>
         </form>
         <div id="results"></div>
     </div>
